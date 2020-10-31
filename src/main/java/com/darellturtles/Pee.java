@@ -192,7 +192,7 @@ public class Pee {
             } // End of run()
         }; // End of timerTask
 
-        timer.schedule(timerTask, 3000); // 20000ms = 20seconds
+        timer.schedule(timerTask, 20000); // 20000ms = 20seconds
     } // End of addOnePee()
 
 } // End of pee class
