@@ -8,4 +8,4 @@ WORKDIR /app
 RUN mvn clean package
  
 # set the startup command to execute the jar
-CMD ["java", "-jar", "/app/target/JavaDiscordBot-1.0-SNAPSHOT.jar"]
+CMD ["java", "-jar", "/app/target/JavaDiscordBot-1.0-SNAPSHOT-jar-with-dependencies.jar"]
