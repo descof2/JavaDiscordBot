@@ -76,6 +76,11 @@
                     </descriptorRefs>
 
 
+                    <archive>
+                        <manifest>
+                            <mainClass>com.darellturtles.Bot</mainClass>
+                        </manifest>
+                    </archive>
                 </configuration>
 
                 <executions>
