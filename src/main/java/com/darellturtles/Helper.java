@@ -25,6 +25,6 @@ public class Helper {
         message.getChannel().sendMessage(
             "!pee pee - You went pee pee\n"+
             "!pee totals - Print all time pees\n" +
-            "!pee dailies - Print total pees for the day \n");
+            "!pee daily - Print total pees for the day \n");
     }
 } // end of class
