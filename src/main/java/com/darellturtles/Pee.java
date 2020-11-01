@@ -130,7 +130,7 @@ public class Pee {
         MongoCollection<Document> dailyTotalsCol = getCollection("DailyTotals");
 
         // Send the pee gradient chart
-        File chartImage = new File("C:\\Users\\Darell\\Desktop\\JavaBot\\peeChart.png");
+        File chartImage = new File("/app/resources/peeChart.png");
         Message chartMessage = message.getChannel().sendMessage(
                 "To record your pee, select which gradient most closely matched to your pee pee :toilet:\nComplete in 20 seconds", chartImage).join();
         chartMessage.addReactions("1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣");
