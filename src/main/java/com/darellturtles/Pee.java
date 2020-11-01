@@ -130,9 +130,9 @@ public class Pee {
         MongoCollection<Document> dailyTotalsCol = getCollection("DailyTotals");
 
         // Send the pee gradient chart
-        File chartImage = new File("/app/resources/peeChart.png");
+        File chartImage = new File(System.getenv("PEE_CHART_PATH"));
         Message chartMessage = message.getChannel().sendMessage(
-                "To record your pee, select which gradient most closely matched to your pee pee :toilet:\nComplete in 20 seconds", chartImage).join();
+                "To record your pee, select which gradient most closely matched to your pee pee :toilet:\nComplete in 10 seconds", chartImage).join();
         chartMessage.addReactions("1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣");
 
 
@@ -192,7 +192,7 @@ public class Pee {
             } // End of run()
         }; // End of timerTask
 
-        timer.schedule(timerTask, 20000); // 20000ms = 20seconds
+        timer.schedule(timerTask, 10000); // 20000ms = 20seconds
     } // End of addOnePee()
 
 } // End of pee class
