@@ -171,7 +171,7 @@ public class Pee {
                 }
 
                 // Add user's gradient into the UserGradients collection along with date recorded in American Central Time
-                Instant now = Instant.now().minusSeconds(18000); // Instant returns a time date in GMT which is 5 hours ahead of American Central thus subtract 5 hours to get central
+                Instant now = Instant.now().minusSeconds(21600); // Instant returns a time date in GMT which is 6 hours ahead of American Central thus subtract 6 hours to get central
                 insertion = new Document("userName", user).append("peeGradient", gradientInt).append("date", now);
                 userGradientCol.insertOne(insertion);
 
