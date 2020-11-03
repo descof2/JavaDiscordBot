@@ -14,11 +14,10 @@ public class Helper {
         message.getChannel().sendMessage(
             "!help - List all usable commands \n" +
             "!help sounds - List all usable sounds \n" +
-            "!jackboxtime - Move everyone to jackbox channel. Include names after the command to exclude moving those users [COMING SOON]\n" +
-            "!generaltime - Move everyone from jackbox back to general\n" +
+            "!help pee - list all pee related commands \n" +
             "!poll [Question] - Creates a poll for users to vote on\n" +
-            "!joey - Links a random JoeysWorldTourVideo:pizza:\n" +
-            "!chugs - Links a random BadlandsChugs:beverage_box:\n");
+            "!joey - [COMING SOON AGAIN] Links a random JoeysWorldTourVideo:pizza:\n" +
+            "!chugs - [COMING SOON AGAIN] Links a random BadlandsChugs:beverage_box:\n");
     }
 
     public void printPees(){
