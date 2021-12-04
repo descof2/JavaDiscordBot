@@ -2,6 +2,8 @@ package com.darellturtles;
 
 import org.javacord.api.DiscordApi;
 import org.javacord.api.DiscordApiBuilder;
+
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -53,15 +55,6 @@ public class Bot {
                 poll.createPoll();
             }
 
-            // Mover Commands
-            if (userInput.get(0).equalsIgnoreCase("!jackboxtime")){
-                //Mover mover = new Mover();
-
-            }
-
-            if (userInput.get(0).equalsIgnoreCase("!generaltime")){
-                //Mover mover = new Mover();
-            }
 
             // Pee Commands
             // Record a user's pee along with the gradient of that pee
@@ -82,6 +75,17 @@ public class Bot {
             if (userInput.get(0).equalsIgnoreCase("!pee") && userInput.get(1).equalsIgnoreCase("daily")){
                 Pee pee = new Pee(event.getMessage());
                 pee.printUserDailies();
+            }
+
+            // Joke Command
+            // Print a random joke from dadJokes api
+            if (userInput.get(0).equalsIgnoreCase("!joke")){
+                Joke joke = new Joke(event.getMessage());
+                try {
+                    joke.printJoke();
+                } catch (IOException | InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
 
         }); // end of listener
