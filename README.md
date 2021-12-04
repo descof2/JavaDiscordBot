@@ -1,7 +1,8 @@
 # JavaDiscordBot
 
 **Current commands:** <br />
-!poll - Creates a simple yes/no poll that automatically adds a 👍 and 👎 reaction to poll
+!poll - Creates a simple yes/no poll that automatically adds a 👍 and 👎 reaction to poll <br />
+!joke - Tells a joke with a spoiler-free punchline
 
 **Pee commands** - Track how many times you go to the bathroom a day, resetting the total count at midnight CST. <br />
 !pee pee - Posts a bot message asking the user the color gradient of their bathroom break <br />
